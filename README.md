@@ -1,14 +1,11 @@
 # check-readme-file
-CI/CD Governance (Google Cloud Build)
-Overview
+**CI/CD Governance (Google Cloud Build)**
+**Overview**
 
 All builds and deployments are orchestrated using Google Cloud Build with mandatory manual approvals.
 This ensures:
-
 Controlled releases
-
 Full auditability
-
 Reduced deployment risk
 
 Clear accountability
@@ -17,28 +14,19 @@ Clear accountability
 | `dev`  | Push / PR merge | Manual approval    |
 | `main` | Push / PR merge | Manual approval    |
 
-Deployment Lifecycle
-Code is merged into dev or main.
+**Deployment Lifecycle**
+1. Code is merged into dev or main.
+2. A Cloud Build pipeline is automatically triggered.
+3. Build and validation steps are executed.
+4. Deployment pauses at an approval gate.
+5. Deployment proceeds only after explicit approval.
+6. Logs and execution metadata are retained.
 
-A Cloud Build pipeline is automatically triggered.
-
-Build and validation steps are executed.
-
-Deployment pauses at an approval gate.
-
-Deployment proceeds only after explicit approval.
-
-Logs and execution metadata are retained.
-
-Manual Deployment Approval
+**Manual Deployment Approval**
 To approve a deployment:
 
-Open Google Cloud Console
-
-Navigate to Cloud Build → Build History
-
-Locate the build awaiting approval
-
-Click Approve
-
-Monitor deployment progress via build logs and stage
+1) Open Google Cloud Console
+2) Navigate to Cloud Build → Build History
+3) Locate the build awaiting approval
+4) Click Approve (Optinonal message)
+5) Monitor deployment progress via build logs and stage
