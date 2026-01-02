@@ -7,7 +7,7 @@
 All builds and deployments are orchestrated using Google Cloud Build with mandatory manual approvals.
 This ensures:
 . Controlled releases
-. Full auditability
+. Full auditability 
 . Reduced deployment risk
 
 Clear accountability
