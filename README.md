@@ -1,10 +1,6 @@
 # check-readme-file
 **Environment Strategy**
-| Environment | Branch | Purpose                                    |
-| ----------- | ------ | ------------------------------------------ |
-| Development | `dev`  | Feature validation and integration testing |
-| Production  | `main` | Client-facing live environment             |
-Each environment is logically isolated and deployed through a governed release process.
+
 **CI/CD Governance (Google Cloud Build)**
 **Overview**
 
