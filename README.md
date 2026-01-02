@@ -1,14 +1,25 @@
 # check-readme-file
 **Environment Strategy**
 
+| Environment | Branch | Purpose                                    |
+| ----------- | ------ | ------------------------------------------ |
+| Development | `dev`  | Feature validation and integration testing |
+| Production  | `main` | Live Prod environment                      |
+
+
+
 **CI/CD Governance (Google Cloud Build)**
 **Overview**
-
 All builds and deployments are orchestrated using Google Cloud Build with mandatory manual approvals.
 This ensures:
-. Controlled releases
-. Full auditability 
-. Reduced deployment risk
+
+Controlled releases
+
+Full auditability
+
+Reduced deployment risk
+
+Clear accountability
 
 Clear accountability
 | Branch | CI Trigger      | Deployment Control |
