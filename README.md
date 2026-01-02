@@ -10,18 +10,11 @@
 
 **CI/CD Governance (Google Cloud Build)**
 **Overview**
-All builds and deployments are orchestrated using Google Cloud Build with mandatory manual approvals.
-This ensures:
+All builds and deployments are managed using Google Cloud Build.
+Deployments require manual approval for both development and production, ensuring controlled and auditable releases.
 
-Controlled releases
+**Branch-Based Deployment Model**
 
-Full auditability
-
-Reduced deployment risk
-
-Clear accountability
-
-Clear accountability
 | Branch | CI Trigger      | Deployment Control |
 | ------ | --------------- | ------------------ |
 | `dev`  | Push / PR merge | Manual approval    |
